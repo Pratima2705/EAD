@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcy.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input class="input" type="text" id="display">
+        </div>
+        <div class="numbers">
+            <div class="class1" onclick="clearDisplay()"><b>AC</b></div>
+            <div class="class1" onclick="appendToDisplay('1')"><b>1</b></div>
+            <!-- <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div>
+            <button onclick="document.getElementById()"><b>AC</b></button></div> -->
+            <div class="class1" onclick="appendToDisplay('2')"><b>2</b></div>
+            <div class="class1" onclick="appendToDisplay('3')"><b>3</b></div>
+            <div class="class1" onclick="appendToDisplay('+')"><b>+</b></div>
+            <div class="class1" onclick="appendToDisplay('4')"><b>4</b></div>
+            <div class="class1" onclick="appendToDisplay('5')"><b>5</b></div>
+            <div class="class1" onclick="appendToDisplay('6')"><b>6</b></div>
+            <div class="class1" onclick="appendToDisplay('-')"><b>-</b></div>
+            <div class="class1" onclick="appendToDisplay('7')"><b>7</b></div>
+            <div class="class1" onclick="appendToDisplay('8')"><b>8</b></div>
+            <div class="class1" onclick="appendToDisplay('9')"><b>9</b></div>
+            <div class="class1" onclick="appendToDisplay('*')"><b>*</b></div>
+            <div class="class1" onclick="appendToDisplay('/')"><b>/</b></div>
+            <div class="class1" onclick="calculate()"><b>=</b></div>
+            <div class="class1" onclick="appendToDisplay('0')"><b>0</b></div>
+        </div>
+    </div>
+    <script>
+        let display=document.getElementById("display");
+        function clearDisplay()
+        {
+            display.value="";
+        }
+        function appendToDisplay(value)
+        {
+            display.value+=value;
+        }
+        function calculate()
+        {
+            try{
+                display.value=eval(display.value);
+            }
+           catch(e)
+           {
+            display.value="Error";
+           }
+        }
+    </script>
+</body>
+</html>
